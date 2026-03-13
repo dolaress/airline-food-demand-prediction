@@ -118,7 +118,7 @@ if 'flight_id' in df.columns:
 
 # --- 1. Basic Statistics & Missing Values ---
 print("### Basic Statistics ###")
-display(df.describe())  # [cite: 31]
+print(df.describe())  # [cite: 31]
 
 print("\n### Missing Values Check ###")
 print(df.isnull().sum()) #
@@ -320,7 +320,7 @@ results_df = pd.DataFrame(comparison_data)
 
 # Tabloyu güzelleştirip gösterelim
 print("### Task 5: Model Performance Comparison ###")
-display(results_df.round(4))
+print(results_df.round(4).to_string())
 
 # En iyi modeli belirleyelim (Otomatik olarak)
 best_model_name = results_df.sort_values(by='R² Score', ascending=False).iloc[0]['Model']
