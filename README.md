@@ -23,4 +23,4 @@ Install the necessary dependencies from `requirements.txt`:
 pip install -r requirements.txt
 ```
 
-Run the `airline_food_demand_prediction.ipynb` notebook to see the data generation and analysis steps.
+Run the `airline_food_demand_prediction.py` script to see the data generation and analysis steps.
